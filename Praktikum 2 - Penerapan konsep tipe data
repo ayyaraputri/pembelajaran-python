@@ -1,0 +1,545 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMe7dDV8Z7p32XV5aoAnXb0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ayyaraputri/pembelajaran-python/blob/main/Praktikum%202%20-%20Penerapan%20konsep%20tipe%20data\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Tipe data**"
+      ],
+      "metadata": {
+        "id": "bNnhns-VcTqZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tipe data adalah suatu media atau memori pada komputer yang digunakan untuk menampung informasi. Python sendiri mempunyai tipe data yang cukup unik bila kita bandingkan dengan bahasa pemrograman yang lain. Berikut adalah tipe data dari bahasa pemrograman Python:"
+      ],
+      "metadata": {
+        "id": "xdRpu-OoaqPt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 28,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZzZ_hWJkV_WF",
+        "outputId": "c073e9de-efca-4b2e-90f3-902379bed583"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ],
+      "source": [
+        "#tipe data Boolean\n",
+        "print(True)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Menyatakan benar True yang bernilai 1, atau salah False yang bernilai 0"
+      ],
+      "metadata": {
+        "id": "C2vaX6zhcX0i"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data String\n",
+        "print(\"string dengan menggunakan tanda kutip dua\")\n",
+        "print('ini string menggunakan tanda kutip satu')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mbko64qGWG7Q",
+        "outputId": "9d1c7087-7907-4b63-b220-7a5be8f326c1"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "string dengan menggunakan tanda kutip dua\n",
+            "ini string menggunakan tanda kutip satu\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Menyatakan karakter/kalimat bisa berupa huruf angka, dll (diapit tanda \" atau ')"
+      ],
+      "metadata": {
+        "id": "yJBeVbCRckq7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data string dengan menjelaskan spesial karakter atau escape sequences\n",
+        "print('ini adalah tanda single quote (\\')')\n",
+        "print(\"ini adalah tanda double quote (\\\")\")\n",
+        "print(\"ini adalah tanda slash (\\\\)\")\n",
+        "print(\"Algoritma\\nPemrograman\") #menggunakan \\n\n",
+        "print(\"Algoritma\\bPemrograman\") #menggunakan \\b\n",
+        "print(\"Algoritma\\tPemrograman\") #menggunakan \\t\n",
+        "print(\"Algoritma\\rPemrograman\") #menggunakan \\b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HWp6IjKNdtA0",
+        "outputId": "b4e26511-af58-4101-8008-9bdb4578c5dd"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ini adalah tanda single quote (')\n",
+            "ini adalah tanda double quote (\")\n",
+            "ini adalah tanda slash (\\)\n",
+            "Algoritma\n",
+            "Pemrograman\n",
+            "Algoritma\bPemrograman\n",
+            "Algoritma\tPemrograman\n",
+            "Algoritma\rPemrograman\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "dalam hal menjelaskan tentang beberapa karakter pada string, dijelaskan sebagai berikut:"
+      ],
+      "metadata": {
+        "id": "jyOI4GPrdY-a"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Literal single quote (') character"
+      ],
+      "metadata": {
+        "id": "5ZhN9Ge4duyt"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Literal double quote (\") character"
+      ],
+      "metadata": {
+        "id": "7YoRVOxcd0AN"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "ASCII Linefeed (LF) character"
+      ],
+      "metadata": {
+        "id": "rRBSUVErd3d2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Literal backslash () character"
+      ],
+      "metadata": {
+        "id": "htHnUrlGd_n_"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "ASCII Backspace (BS) character"
+      ],
+      "metadata": {
+        "id": "_fWSR1peekYb"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "ASCII Horizontal Tab (TAB) character"
+      ],
+      "metadata": {
+        "id": "Zi1M_aXOeqRM"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "ASCII Carriage Return (CR) character"
+      ],
+      "metadata": {
+        "id": "Ve9YJk6Nex0-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data Integer\n",
+        "print(20)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WNmOGcTVWlJA",
+        "outputId": "f8f39744-c595-47f7-9cf9-0e4e29f82d1d"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Menyatakan bilangan bulat"
+      ],
+      "metadata": {
+        "id": "encpIESVfBLw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data Float\n",
+        "print(3.14)\n",
+        "print(.2)\n",
+        "print(4.2e-3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EDX9pn6MWo5Z",
+        "outputId": "669ad4fd-b9be-42c4-9456-6efece03a9c7"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3.14\n",
+            "0.2\n",
+            "0.0042\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Menyatakan bilangan yang mempunyai koma"
+      ],
+      "metadata": {
+        "id": "pWjqk9EKcx69"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data Binary\n",
+        "print(0b10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BQBQFp1sW3MN",
+        "outputId": "f23a1698-a584-48e3-ecbf-f985123bf5cf"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Menyatakan bilangan dalam format binary / biner (bilangan berbasis 2)"
+      ],
+      "metadata": {
+        "id": "g7hPWLOpfE2H"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data octal\n",
+        "print(0o10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6jMl6YzZXiBR",
+        "outputId": "c5fea32c-04ee-4eca-9227-f709986907e9"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Menyatakan bilangan dalam format oktal (bilangan berbasis 8)"
+      ],
+      "metadata": {
+        "id": "Bo744jY0fM9R"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data Hexadecimal\n",
+        "print('tipe data heksa desimal',0x10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mBE3zEHtXkRZ",
+        "outputId": "1a2c8d14-aef5-409e-f507-10b95b70ff1e"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "tipe data heksa desimal 16\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Menyatakan bilangan dalam format heksa (bilangan berbasis 16)"
+      ],
+      "metadata": {
+        "id": "ypQ7teByfXY5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data Complex\n",
+        "print(5j)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iZ1RLooHXovK",
+        "outputId": "c635c89b-97da-44c0-d89a-b0439220853f"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5j\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Menyatakan pasangan angka real dan imajiner"
+      ],
+      "metadata": {
+        "id": "VPcqCT3gfbUD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data List\n",
+        "print([1,2,3,4,5])\n",
+        "print([\"satu\", \"dua\", \"tiga\"])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vloZqjc5YkT6",
+        "outputId": "37e4b610-0cb9-438b-a9d2-d5666e1cae65"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5]\n",
+            "['satu', 'dua', 'tiga']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Data untaian yang menyimpan berbagai tipe data dan isinya bisa diubah-ubah"
+      ],
+      "metadata": {
+        "id": "XY1xeegtfgg7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data Tuple\n",
+        "print((1,2,3,4,5))\n",
+        "print((\"satu\", \"dua\", \"tiga\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "r0BwjxkOYn7y",
+        "outputId": "db470371-3e02-434d-bddd-7b3fdfbdcfd4"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(1, 2, 3, 4, 5)\n",
+            "('satu', 'dua', 'tiga')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Data untaian yang menyimpan berbagai tipe data tapi isinya tidak bisa diubah"
+      ],
+      "metadata": {
+        "id": "Okd3E-ZnoNEb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tipe data Dictionary\n",
+        "print({\"nama\":\"Budi\", 'umur':20})\n",
+        "#tipe data Dictionary dimasukan ke dalam variabel biodata\n",
+        "biodata = {\"nama\":\"Budi\", 'umur':21} #proses inisialisasi variabel biodata\n",
+        "print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Dictionary\n",
+        "type(biodata) #fungsi untuk mengecek jenis tipe data. akan tampil <class 'dict'> yang berarti dict adalah tipe data dictionary"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TnX3yDW8Yq6c",
+        "outputId": "62fd8f2f-5eae-4ea3-d558-6c468278e98a"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'nama': 'Budi', 'umur': 20}\n",
+            "{'nama': 'Budi', 'umur': 21}\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Data untaian yang menyimpan berbagai tipe data berupa pasangan penunjuk dan nilai"
+      ],
+      "metadata": {
+        "id": "ZFDgl5F6oT-8"
+      }
+    }
+  ]
+}
